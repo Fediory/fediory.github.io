@@ -1,161 +1,133 @@
 const projects = [
   {
     title: "Grid-Sampler",
-    tag: "Vision-language action",
+    venue: "ICML 2026",
+    type: "Vision-language action",
     description:
-      "Official implementation for differentiable grid sample pruning, exploring efficient visual reasoning for generalizable vision-language-action models.",
-    meta: "ICML 2026 · Python",
+      "Official implementation for differentiable grid sample pruning in generalizable vision-language-action models.",
     href: "https://github.com/Fediory/Grid-Sampler",
   },
   {
     title: "HVI-CIDNet",
-    tag: "Low-light enhancement",
+    venue: "CVPR 2025 · NTIRE 2025",
+    type: "Low-light image enhancement",
     description:
-      "A practical implementation of HVI, a new color space for low-light image enhancement, released with CVPR 2025 and NTIRE 2025 work.",
-    meta: "CVPR 2025 · NTIRE 2025 · Python",
+      "Official implementation of HVI, a new color space and network design for practical low-light image enhancement.",
     href: "https://github.com/Fediory/HVI-CIDNet",
   },
   {
     title: "NPUcore-IMPACT",
-    tag: "Operating systems",
+    venue: "Rust · Systems",
+    type: "Operating systems",
     description:
       "An operating-system kernel implementation project developed for the national computer systems capability competition.",
-    meta: "Rust · Systems",
     href: "https://github.com/Fediory/NPUcore-IMPACT",
   },
 ];
 
-const timeline = [
-  {
-    year: "Now",
-    title: "Researcher · Artist · Programmer",
-    place: "University of Sydney",
-    text: "Building at the intersection of machine learning, visual computing, and creative practice.",
-  },
-  {
-    year: "Selected work",
-    title: "Computer vision & systems",
-    place: "Open-source projects",
-    text: "Releasing reproducible implementations and experiments for the research community.",
-  },
+const news = [
+  { date: "2026", text: "Continuing work across computer vision, machine learning, and systems." },
+  { date: "2025", text: "Released reproducible implementations for vision and image enhancement research." },
+  { date: "Now", text: "Open to research collaborations, engineering projects, and thoughtful conversations." },
 ];
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Fediory Feng home">
-          FF<span>.</span>
-        </a>
-        <nav className="nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#work">Selected work</a>
-          <a href="#background">Background</a>
-          <a href="https://github.com/Fediory" target="_blank" rel="noreferrer">
-            GitHub <span className="external" aria-hidden="true">↗</span>
-          </a>
-        </nav>
+        <div className="header-inner">
+          <a className="brand" href="#home" aria-label="Fediory Feng home">Fediory Feng</a>
+          <nav className="nav" aria-label="Primary navigation">
+            <a href="#home">Home</a>
+            <a href="#research">Research</a>
+            <a href="#projects">Projects</a>
+            <a href="#background">Background</a>
+            <a href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </nav>
+        </div>
       </header>
 
-      <div id="top" className="page-shell">
-        <section className="hero" id="about" aria-labelledby="intro-title">
-          <div className="hero-copy">
-            <p className="eyebrow"><span className="status-dot" /> Fediory Feng · Sydney, Australia</p>
-            <h1 id="intro-title">Ideas become<br /><em>working systems.</em></h1>
-            <p className="lede">
-              Researcher, artist, and programmer interested in how intelligent systems
-              see, learn, and become useful in the real world.
+      <div className="page-shell" id="home">
+        <section className="hero section-block" aria-labelledby="name">
+          <div className="hero-main">
+            <p className="kicker">Researcher · Artist · Programmer · Student</p>
+            <h1 id="name">Fediory Feng</h1>
+            <p className="hero-subtitle">Building intelligent systems that are useful, reproducible, and easy to understand.</p>
+            <p className="hero-copy">
+              I work across computer vision, machine learning, systems, and creative technology. My interests sit at the boundary between research ideas and software that people can actually run.
             </p>
-            <div className="hero-actions">
-              <a className="button button-dark" href="https://github.com/Fediory" target="_blank" rel="noreferrer">
-                View GitHub <span aria-hidden="true">↗</span>
-              </a>
-              <a className="text-link" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+            <div className="link-row">
+              <a className="primary-link" href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="#projects">Selected projects <span aria-hidden="true">↓</span></a>
             </div>
           </div>
-          <div className="hero-mark" aria-hidden="true">
-            <div className="mark-ring ring-one" />
-            <div className="mark-ring ring-two" />
-            <div className="mark-cross cross-one" />
-            <div className="mark-cross cross-two" />
-            <span>F / 01</span>
-          </div>
-        </section>
-
-        <section className="intro-grid section-rule">
-          <p className="section-label">01 / Profile</p>
-          <div>
-            <p className="section-title">A practice between<br /><span>research and making.</span></p>
-            <p className="body-copy">
-              I work across computer vision, machine learning, systems, and creative
-              technology. My projects move from questions in a paper to code that
-              others can run, inspect, and build on.
-            </p>
-          </div>
-          <aside className="profile-note">
-            <p className="mini-label">Current focus</p>
-            <p>Visual intelligence<br />Open-source research<br />Human-scale tools</p>
+          <aside className="profile-card" aria-label="Profile summary">
+            <div className="avatar">FF</div>
+            <div className="profile-card-body">
+              <p className="card-label">Research profile</p>
+              <p className="profile-title">Computer vision<br />Machine learning<br />Systems</p>
+              <div className="profile-meta"><span>Based in</span><strong>Sydney, Australia</strong></div>
+              <div className="profile-meta"><span>Affiliation</span><strong>University of Sydney</strong></div>
+            </div>
           </aside>
         </section>
 
-        <section className="work-section section-rule" id="work" aria-labelledby="work-title">
-          <div className="section-heading">
-            <p className="section-label">02 / Selected work</p>
-            <h2 id="work-title">Projects with a point of view.</h2>
-            <a className="text-link" href="https://github.com/Fediory?tab=repositories" target="_blank" rel="noreferrer">
-              All repositories <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-          <div className="project-list">
-            {projects.map((project, index) => (
-              <a className="project-card" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
-                <span className="project-index">0{index + 1}</span>
-                <div className="project-main">
-                  <div className="project-topline"><span>{project.tag}</span><span>{project.meta}</span></div>
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
-                <span className="project-arrow" aria-hidden="true">↗</span>
-              </a>
-            ))}
-          </div>
-        </section>
-
-        <section className="background-section section-rule" id="background" aria-labelledby="background-title">
-          <div className="section-heading compact">
-            <p className="section-label">03 / Background</p>
-            <h2 id="background-title">A short timeline.</h2>
-          </div>
-          <div className="timeline">
-            {timeline.map((item) => (
-              <article className="timeline-item" key={item.year}>
-                <p className="timeline-year">{item.year}</p>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p className="timeline-place">{item.place}</p>
-                  <p className="body-copy">{item.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="contact-section section-rule" aria-labelledby="contact-title">
-          <p className="section-label">04 / Contact</p>
-          <div className="contact-content">
-            <h2 id="contact-title">Let&apos;s make<br /><em>something useful.</em></h2>
-            <div>
-              <p className="body-copy">For research, collaboration, or a thoughtful hello.</p>
-              <a className="contact-email" href="mailto:fediory@users.noreply.github.com">Get in touch <span aria-hidden="true">↗</span></a>
+        <section className="content-grid section-block" id="research" aria-labelledby="research-title">
+          <div className="section-aside"><span className="section-number">01</span><span>Research</span></div>
+          <div className="section-content">
+            <h2 id="research-title">Research interests</h2>
+            <p className="lead-copy">My work explores how visual intelligence can become more efficient, robust, and accessible through better representations, training methods, and systems.</p>
+            <div className="interest-grid">
+              <article><span className="interest-number">01</span><h3>Visual intelligence</h3><p>Representation learning, vision-language models, and reliable perception.</p></article>
+              <article><span className="interest-number">02</span><h3>Efficient learning</h3><p>Practical methods that improve computation, generalization, and reproducibility.</p></article>
+              <article><span className="interest-number">03</span><h3>Systems for AI</h3><p>Open-source implementations, operating systems, and tools that connect ideas to practice.</p></article>
             </div>
           </div>
         </section>
+
+        <section className="content-grid section-block" aria-labelledby="news-title">
+          <div className="section-aside"><span className="section-number">02</span><span>News</span></div>
+          <div className="section-content">
+            <h2 id="news-title">Updates</h2>
+            <div className="news-list">
+              {news.map((item) => <div className="news-item" key={item.date + item.text}><span>{item.date}</span><p>{item.text}</p></div>)}
+            </div>
+          </div>
+        </section>
+
+        <section className="content-grid section-block" id="projects" aria-labelledby="projects-title">
+          <div className="section-aside"><span className="section-number">03</span><span>Selected work</span></div>
+          <div className="section-content">
+            <div className="section-heading-row"><h2 id="projects-title">Projects &amp; implementations</h2><a className="small-link" href="https://github.com/Fediory?tab=repositories" target="_blank" rel="noreferrer">View all on GitHub ↗</a></div>
+            <div className="project-list">
+              {projects.map((project, index) => (
+                <a className="project-row" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
+                  <span className="project-index">0{index + 1}</span>
+                  <div className="project-details"><div className="project-meta"><span>{project.venue}</span><span>{project.type}</span></div><h3>{project.title}</h3><p>{project.description}</p></div>
+                  <span className="project-arrow" aria-hidden="true">↗</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="content-grid section-block" id="background" aria-labelledby="background-title">
+          <div className="section-aside"><span className="section-number">04</span><span>Background</span></div>
+          <div className="section-content background-grid">
+            <div><h2 id="background-title">Education</h2><div className="background-item"><span>Present</span><div><h3>University of Sydney</h3><p>Research and study across data science, computer vision, and machine learning.</p></div></div></div>
+            <div><h2>Now</h2><div className="background-item"><span>Focus</span><div><h3>Research · engineering · open source</h3><p>Developing technical projects that make intelligent systems more useful in practice.</p></div></div></div>
+          </div>
+        </section>
+
+        <section className="contact-block section-block" id="contact" aria-labelledby="contact-title">
+          <p className="section-eyebrow">05 / Contact</p>
+          <h2 id="contact-title">Interested in working together?</h2>
+          <p>For research, collaboration, or a thoughtful hello, find me on GitHub.</p>
+          <a className="primary-link" href="https://github.com/Fediory" target="_blank" rel="noreferrer">github.com/Fediory ↗</a>
+        </section>
       </div>
 
-      <footer className="site-footer">
-        <span>© {new Date().getFullYear()} Fediory Feng</span>
-        <span>Built with curiosity · <a href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub ↗</a></span>
-      </footer>
+      <footer className="site-footer"><div className="footer-inner"><span>© {new Date().getFullYear()} Fediory Feng</span><span>Academic personal homepage</span></div></footer>
     </main>
   );
 }
