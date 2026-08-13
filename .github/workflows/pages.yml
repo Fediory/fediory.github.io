@@ -36,6 +36,7 @@ jobs:
           cp index.html styles.css _site/
           cp -R public _site/public
           cp -R publication _site/publication
+          cp -R project _site/project
           touch _site/.nojekyll
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
