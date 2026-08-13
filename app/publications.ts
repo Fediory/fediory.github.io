@@ -78,4 +78,5 @@ export const reviewerVenues = [
   "European Conference on Computer Vision (ECCV)",
   "Conference on Neural Information Processing Systems (NeurIPS)",
   "Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "International Conference on Machine Learning (ICML)",
 ];
