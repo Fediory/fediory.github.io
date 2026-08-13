@@ -1,133 +1,137 @@
-const projects = [
+const publications = [
   {
-    title: "Grid-Sampler",
+    title: "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model",
+    authors: "Yixu Feng, et al.",
     venue: "ICML 2026",
-    type: "Vision-language action",
+    note: "First author · Accepted",
     description:
-      "Official implementation for differentiable grid sample pruning in generalizable vision-language-action models.",
-    href: "https://github.com/Fediory/Grid-Sampler",
+      "A plug-and-play differentiable grid sampler for VLA models. With only 16 visual tokens it reduces VLA FLOPs by about 76%, while improving LIBERO success and real-robot performance.",
+    link: "https://github.com/Fediory/Grid-Sampler",
   },
   {
-    title: "HVI-CIDNet",
-    venue: "CVPR 2025 · NTIRE 2025",
-    type: "Low-light image enhancement",
+    title: "HVI: A New Color Space for Low-light Image Enhancement",
+    authors: "Yixu Feng, et al.",
+    venue: "CVPR 2025",
+    note: "Co-first author · 800+ GitHub stars",
     description:
-      "Official implementation of HVI, a new color space and network design for practical low-light image enhancement.",
-    href: "https://github.com/Fediory/HVI-CIDNet",
+      "Introduces the HVI color space and CIDNet, a lightweight color-intensity decoupling network for robust low-light enhancement.",
+    link: "https://github.com/Fediory/HVI-CIDNet",
   },
   {
-    title: "NPUcore-IMPACT",
-    venue: "Rust · Systems",
-    type: "Operating systems",
+    title: "FusionNet: Multi-model Linear Fusion Framework for Low-light Image Enhancement",
+    authors: "Yixu Feng, et al.",
+    venue: "CVPR NTIRE 2025",
+    note: "Co-first author · Champion",
     description:
-      "An operating-system kernel implementation project developed for the national computer systems capability competition.",
-    href: "https://github.com/Fediory/NPUcore-IMPACT",
+      "A training-free linear fusion framework combining complementary enhancement models; ranked first in the CVPR 2025 NTIRE low-light enhancement track.",
+    link: "https://github.com/Fediory",
+  },
+  {
+    title: "DiffLight: Integrating Content and Detail for Low-light Image Enhancement",
+    authors: "Yixu Feng, et al.",
+    venue: "CVPR 2024 NTIRE Workshop",
+    note: "First author · Oral · 4th place",
+    description:
+      "A dual-branch enhancement pipeline with progressive patch fusion for preserving details and reducing block artifacts in UHD images.",
+    link: "https://github.com/Fediory",
   },
 ];
 
 const news = [
-  { date: "2026", text: "Continuing work across computer vision, machine learning, and systems." },
-  { date: "2025", text: "Released reproducible implementations for vision and image enhancement research." },
-  { date: "Now", text: "Open to research collaborations, engineering projects, and thoughtful conversations." },
+  ["2026", "See What Matters is accepted by ICML 2026."],
+  ["2025", "FusionNet ranks first in the CVPR 2025 NTIRE Low-Light Enhancement track."],
+  ["2025", "HVI is accepted by CVPR 2025 and released as an open-source implementation."],
+  ["2024", "DiffLight is presented orally at the CVPR 2024 NTIRE Workshop."],
 ];
 
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <div className="header-inner">
-          <a className="brand" href="#home" aria-label="Fediory Feng home">Fediory Feng</a>
-          <nav className="nav" aria-label="Primary navigation">
-            <a href="#home">Home</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#background">Background</a>
-            <a href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          </nav>
-        </div>
+      <header className="top-nav">
+        <nav className="nav-inner" aria-label="Primary navigation">
+          <a href="#home">Homepage</a>
+          <a href="#publications">Publications</a>
+          <a href="#education">Educations</a>
+          <a href="#internship">Internship</a>
+          <a href="#awards">Honors and Awards</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
-      <div className="page-shell" id="home">
-        <section className="hero section-block" aria-labelledby="name">
-          <div className="hero-main">
-            <p className="kicker">Researcher · Artist · Programmer · Student</p>
-            <h1 id="name">Fediory Feng</h1>
-            <p className="hero-subtitle">Building intelligent systems that are useful, reproducible, and easy to understand.</p>
-            <p className="hero-copy">
-              I work across computer vision, machine learning, systems, and creative technology. My interests sit at the boundary between research ideas and software that people can actually run.
-            </p>
-            <div className="link-row">
-              <a className="primary-link" href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-              <a href="#projects">Selected projects <span aria-hidden="true">↓</span></a>
-            </div>
-          </div>
-          <aside className="profile-card" aria-label="Profile summary">
-            <div className="avatar">FF</div>
-            <div className="profile-card-body">
-              <p className="card-label">Research profile</p>
-              <p className="profile-title">Computer vision<br />Machine learning<br />Systems</p>
-              <div className="profile-meta"><span>Based in</span><strong>Sydney, Australia</strong></div>
-              <div className="profile-meta"><span>Affiliation</span><strong>University of Sydney</strong></div>
+      <div className="site-wrap" id="home">
+        <section className="profile-section">
+          <aside className="profile-sidebar">
+            <img className="profile-photo" src="https://avatars.githubusercontent.com/u/113850295?v=4" alt="Yixu Feng" />
+            <h1>Yixu Feng</h1>
+            <p className="name-cn">冯宜湑</p>
+            <p className="affiliation">The University of Sydney</p>
+            <p className="role">Ph.D. student in Computer Science and Technology</p>
+            <p className="location">Sydney, Australia</p>
+            <div className="contact-links" id="contact">
+              <a href="mailto:fediory@gmail.com">Email</a>
+              <a href="https://github.com/Fediory" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://scholar.google.com/citations?user=WljJ2HUAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+              <a href="https://github.com/Fediory/fediory.github.io" target="_blank" rel="noreferrer">CV / Homepage source</a>
             </div>
           </aside>
-        </section>
 
-        <section className="content-grid section-block" id="research" aria-labelledby="research-title">
-          <div className="section-aside"><span className="section-number">01</span><span>Research</span></div>
-          <div className="section-content">
-            <h2 id="research-title">Research interests</h2>
-            <p className="lead-copy">My work explores how visual intelligence can become more efficient, robust, and accessible through better representations, training methods, and systems.</p>
-            <div className="interest-grid">
-              <article><span className="interest-number">01</span><h3>Visual intelligence</h3><p>Representation learning, vision-language models, and reliable perception.</p></article>
-              <article><span className="interest-number">02</span><h3>Efficient learning</h3><p>Practical methods that improve computation, generalization, and reproducibility.</p></article>
-              <article><span className="interest-number">03</span><h3>Systems for AI</h3><p>Open-source implementations, operating systems, and tools that connect ideas to practice.</p></article>
-            </div>
+          <div className="profile-main">
+            <h2 className="sr-only">About</h2>
+            <p>Hi there! I am a Ph.D. student in Computer Science and Technology at <a href="https://www.sydney.edu.au/" target="_blank" rel="noreferrer">The University of Sydney</a>, advised by <a href="https://scholar.google.com/citations?user=N4F_3eoAAAAJ" target="_blank" rel="noreferrer">Prof. Chang Xu</a>.</p>
+            <p>My research focuses on embodied AI, especially the architecture, reasoning, and acceleration of Vision-Language-Action (VLA) and World Action Model (WAM) systems. I am also interested in low-light image enhancement and machine learning.</p>
+            <p>Previously, I studied Computer Science and Technology at Northwestern Polytechnical University, where I was a member of the Jichang Kang Intelligent Systems Elite Class.</p>
+            <div className="quick-links"><a href="#publications">Publications</a><a href="#education">Education</a><a href="#internship">Internship</a><a href="#awards">Awards</a></div>
           </div>
         </section>
 
-        <section className="content-grid section-block" aria-labelledby="news-title">
-          <div className="section-aside"><span className="section-number">02</span><span>News</span></div>
-          <div className="section-content">
-            <h2 id="news-title">Updates</h2>
-            <div className="news-list">
-              {news.map((item) => <div className="news-item" key={item.date + item.text}><span>{item.date}</span><p>{item.text}</p></div>)}
-            </div>
+        <section className="section" id="news">
+          <h2>🔥 News</h2>
+          <div className="news-list">{news.map(([date, text]) => <div className="news-item" key={date + text}><span>{date}</span><p>{text}</p></div>)}</div>
+        </section>
+
+        <section className="section" id="publications">
+          <h2>📖 Publications</h2>
+          <div className="publication-list">
+            {publications.map((paper) => <article className="publication" key={paper.title}>
+              <h3>{paper.title}</h3>
+              <p className="paper-authors">{paper.authors}</p>
+              <p className="paper-venue"><strong>{paper.venue}</strong> · {paper.note}</p>
+              <p>{paper.description}</p>
+              <a className="paper-link" href={paper.link} target="_blank" rel="noreferrer">Project / code ↗</a>
+            </article>)}
           </div>
         </section>
 
-        <section className="content-grid section-block" id="projects" aria-labelledby="projects-title">
-          <div className="section-aside"><span className="section-number">03</span><span>Selected work</span></div>
-          <div className="section-content">
-            <div className="section-heading-row"><h2 id="projects-title">Projects &amp; implementations</h2><a className="small-link" href="https://github.com/Fediory?tab=repositories" target="_blank" rel="noreferrer">View all on GitHub ↗</a></div>
-            <div className="project-list">
-              {projects.map((project, index) => (
-                <a className="project-row" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
-                  <span className="project-index">0{index + 1}</span>
-                  <div className="project-details"><div className="project-meta"><span>{project.venue}</span><span>{project.type}</span></div><h3>{project.title}</h3><p>{project.description}</p></div>
-                  <span className="project-arrow" aria-hidden="true">↗</span>
-                </a>
-              ))}
-            </div>
-          </div>
+        <section className="section" id="education">
+          <h2>🎓 Education</h2>
+          <div className="timeline-row"><span>2025.10 – Present</span><div><strong>Ph.D. in Computer Science and Technology</strong><p>The University of Sydney · Advisor: Chang Xu</p><p>Research: Embodied AI, VLA/WAM architecture, reasoning and acceleration, image enhancement, and machine learning.</p></div></div>
+          <div className="timeline-row"><span>2021.09 – 2025.06</span><div><strong>B.Eng. in Computer Science and Technology</strong><p>Northwestern Polytechnical University · Jichang Kang Intelligent Systems Elite Class</p><p>GPA: 3.737/4.1 · Average score: 89.39/100 · Top 10%</p></div></div>
         </section>
 
-        <section className="content-grid section-block" id="background" aria-labelledby="background-title">
-          <div className="section-aside"><span className="section-number">04</span><span>Background</span></div>
-          <div className="section-content background-grid">
-            <div><h2 id="background-title">Education</h2><div className="background-item"><span>Present</span><div><h3>University of Sydney</h3><p>Research and study across data science, computer vision, and machine learning.</p></div></div></div>
-            <div><h2>Now</h2><div className="background-item"><span>Focus</span><div><h3>Research · engineering · open source</h3><p>Developing technical projects that make intelligent systems more useful in practice.</p></div></div></div>
-          </div>
+        <section className="section" id="internship">
+          <h2>💼 Internship</h2>
+          <div className="timeline-row"><span>2025.10 – 2026.04</span><div><strong>Research Intern · Stellar Edge AI, Hangzhou</strong><p>Built an end-to-end VLA deployment pipeline for humanoid robots and Franka/SO100 arms. Reproduced and adapted PI, Gr00t, and SmolVLA; designed pruning and quantization methods that reduced end-to-end latency by about 40%.</p><p>Deployed three VLA models on real robots and achieved the 10 Hz control requirement.</p></div></div>
+          <div className="timeline-row"><span>2024.07 – 2024.08</span><div><strong>Graphics Algorithm Intern · Zhongjin Huian (Beijing) Technology Co., Ltd.</strong><p>Developed low-light enhancement and real-time video analysis modules for bank-counter surveillance, improving violation detection accuracy by more than 15% and delivering 30 fps edge processing.</p></div></div>
         </section>
 
-        <section className="contact-block section-block" id="contact" aria-labelledby="contact-title">
-          <p className="section-eyebrow">05 / Contact</p>
-          <h2 id="contact-title">Interested in working together?</h2>
-          <p>For research, collaboration, or a thoughtful hello, find me on GitHub.</p>
-          <a className="primary-link" href="https://github.com/Fediory" target="_blank" rel="noreferrer">github.com/Fediory ↗</a>
+        <section className="section" id="awards">
+          <h2>🏅 Honors and Awards</h2>
+          <ul className="award-list">
+            <li>2024 National Collegiate Computer System Capability Contest — OS Kernel Implementation Track, First Prize (Team Leader)</li>
+            <li>The 2nd CrowdOS Open-Source Challenge, First Prize (Team Leader)</li>
+            <li>The 7th National Collegiate Computer System Capability Contest — “Loongson Cup”, Third Prize (Team Leader)</li>
+            <li>The 15th “Challenge Cup” Shaanxi Provincial Academic &amp; Technology Competition, Grand Prize (Team Member)</li>
+          </ul>
+        </section>
+
+        <section className="section" id="projects">
+          <h2>💻 Projects</h2>
+          <div className="project-links"><a href="https://github.com/Fediory/Grid-Sampler" target="_blank" rel="noreferrer">Grid-Sampler</a><a href="https://github.com/Fediory/HVI-CIDNet" target="_blank" rel="noreferrer">HVI-CIDNet</a><a href="https://github.com/Fediory/NPUcore-IMPACT" target="_blank" rel="noreferrer">NPUcore-IMPACT</a><a href="https://github.com/Fediory" target="_blank" rel="noreferrer">More on GitHub ↗</a></div>
         </section>
       </div>
 
-      <footer className="site-footer"><div className="footer-inner"><span>© {new Date().getFullYear()} Fediory Feng</span><span>Academic personal homepage</span></div></footer>
+      <footer className="footer"><span>© {new Date().getFullYear()} Yixu Feng (冯宜湑)</span><span>Last updated 2026</span></footer>
     </main>
   );
 }

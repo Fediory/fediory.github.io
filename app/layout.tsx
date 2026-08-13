@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fediory Feng — Researcher, Artist, Programmer",
+  title: "Yixu Feng (冯宜湑) - Homepage",
   description:
-    "Personal homepage of Fediory Feng, a researcher, artist, and programmer working across machine learning, visual computing, and creative technology.",
+    "Yixu Feng (冯宜湑) is a Ph.D. student at the University of Sydney working on embodied AI, VLA systems, and low-light image enhancement.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
