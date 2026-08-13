@@ -55,6 +55,7 @@ export const publications: Publication[] = [
     title: "HVI-CIDNet+: Beyond Extreme Darkness for Low-Light Image Enhancement",
     authors: "Qingsen Yan, Kangbiao Shi, Yixu Feng, Tao Hu, Peng Wu, Guansong Pang, Yanning Zhang",
     venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+    rank: "CCF-B",
     note: "Co-author · Journal paper",
     description: "Extends HVI-CIDNet with a stronger enhancement pipeline for severely underexposed scenes.",
     link: "https://arxiv.org/abs/2507.06814",
