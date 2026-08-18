@@ -15,7 +15,7 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title: "See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action Model",
-    titleZh: "看到关键点：面向可泛化视觉-语言-动作模型的可微网格样本剪枝",
+    titleZh: "See What Matters：面向可泛化 Vision-Language-Action Model 的 Differentiable Grid Sample Pruning",
     authors: "Yixu Feng, Zinan Zhao, Yanxiang Ma, Chenghao Xia, Chengbin Du, Yunke Wang, Chang Xu",
     venue: "ICML 2026",
     venueZh: "ICML 2026",
@@ -65,7 +65,7 @@ export const publications: Publication[] = [
   },
   {
     title: "Flow-Guided Deformable Alignment with Channel-wise Self-Attention Reconstruct for Efficient Burst HDR Restoration",
-    titleZh: "流引导的可变形对齐与通道自注意力重建：高效连拍 HDR 恢复",
+    titleZh: "Flow-Guided：可变形对齐与通道自注意力重建的高效 Burst HDR 恢复",
     authors: "Weiyu Zhou, Tao Hu, Yixu Feng, Duwei Dai, Yu Cao, Peng Wu, Wei Dong, Yanning Zhang, Qingsen Yan",
     venue: "CVPR Workshops 2025 (NTIRE)",
     venueZh: "CVPR Workshops 2025（NTIRE）",
