@@ -23,7 +23,7 @@ export const publications: Publication[] = [
     note: "First author · Accepted",
     noteZh: "第一作者 · 已接收",
     description: "A plug-and-play differentiable grid sampler for VLA models. With only 16 visual tokens it reduces VLA FLOPs by about 76%, while improving LIBERO success and real-robot performance.",
-    descriptionZh: "提出一种即插即用的可微网格采样器，用于高效压缩 VLA 视觉 Token。在仅保留 16 个视觉 Token 的情况下，VLA FLOPs 降低约 76%，同时提升 LIBERO 成功率与真机表现。",
+    descriptionZh: "提出一种即插即用的可微网格采样器，实现 VLA 视觉 Token 的高效压缩。在仅保留 16 个视觉 Token 的情况下，VLA FLOPs 降低约 76%，同时提升 LIBERO 成功率与真机表现。",
     link: "https://arxiv.org/abs/2605.11817",
   },
   {
@@ -53,14 +53,14 @@ export const publications: Publication[] = [
   },
   {
     title: "DiffLight: Integrating Content and Detail for Low-light Image Enhancement",
-    titleZh: "DiffLight：聚合内容与细节以实现低光环境下的图像增强",
+    titleZh: "DiffLight：融合内容与细节，实现低光环境下的图像增强",
     authors: "Yixu Feng, Shuo Hou, Haotian Lin, Yu Zhu, Peng Wu, Wei Dong, Jinqiu Sun, Qingsen Yan, Yanning Zhang",
     venue: "CVPR Workshops 2024 (NTIRE)",
     venueZh: "CVPR Workshops 2024（NTIRE）",
     note: "First author · NTIRE 2024 · Oral · 4th place",
     noteZh: "第一作者 · NTIRE 2024 · 口头汇报 · 第四名",
     description: "A dual-branch enhancement pipeline with progressive patch fusion for preserving details and reducing block artifacts in UHD images.",
-    descriptionZh: "提出双分支低光增强管道与渐进式块融合策略，在保留细节的同时减少超高清图像分块处理带来的伪影。",
+    descriptionZh: "提出双分支增强流程与渐进式块融合策略，在保留细节的同时减少超高清图像分块处理带来的伪影。",
     link: "https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Feng_DiffLight_Integrating_Content_and_Detail_for_Low-light_Image_Enhancement_CVPRW_2024_paper.html",
   },
   {
@@ -72,7 +72,7 @@ export const publications: Publication[] = [
     note: "NTIRE 2025 · 2nd place · Burst HDR restoration",
     noteZh: "NTIRE 2025 · 第二名 · 连拍 HDR 恢复",
     description: "An alignment-centric burst HDR restoration model that improves motion alignment while keeping feature fusion lightweight and efficient.",
-    descriptionZh: "面向连拍 HDR 恢复的对齐模型，在提升运动对齐能力的同时保持特征融合轻量高效。",
+    descriptionZh: "一种以对齐为核心的 Burst HDR 恢复模型，在提升运动对齐能力的同时保持特征融合轻量高效。",
     link: "https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Zhou_Flow-Guided_Deformable_Alignment_with_Channel-wise_Self-Attention_Reconstruct_for_Efficient_Burst_CVPRW_2025_paper.html",
   },
   {
@@ -85,7 +85,7 @@ export const publications: Publication[] = [
     note: "Co-author · Journal paper",
     noteZh: "合作作者 · 期刊论文",
     description: "Extends HVI-CIDNet with a stronger enhancement pipeline for severely underexposed scenes.",
-    descriptionZh: "在 HVI-CIDNet 基础上增强整体处理管道，面向严重欠曝光场景提供更强的图像增强能力。",
+    descriptionZh: "在 HVI-CIDNet 基础上扩展更强的增强流程，面向严重欠曝光场景提供更强的图像增强能力。",
     link: "https://arxiv.org/abs/2507.06814",
   },
   {
