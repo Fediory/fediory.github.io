@@ -4,7 +4,7 @@ import { LanguageProvider } from "./components/language";
 
 export const metadata: Metadata = {
   title: "Yixu Feng (冯宜湑) - Homepage",
-  description: "Yixu Feng (冯宜湑) is a Ph.D. student at the University of Sydney working on embodied AI, VLA systems, and low-light image enhancement.",
+  description: "Yixu Feng (冯宜湑) is an MPhil student at the University of Sydney working on embodied AI, VLA systems, and low-light image enhancement.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
