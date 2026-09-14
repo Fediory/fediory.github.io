@@ -15,12 +15,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("en");
 
   useEffect(() => {
-    const stored = window.localStorage.getItem("fediory-language");
-    if (stored === "en" || stored === "zh") setLanguage(stored);
-  }, []);
-
-  useEffect(() => {
-    window.localStorage.setItem("fediory-language", language);
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
   }, [language]);
 

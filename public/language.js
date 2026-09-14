@@ -19,7 +19,7 @@
     "MPhil in Computer Science and Technology": "计算机科学与技术哲学硕士",
     "I am an MPhil student at": "我目前是",
     "2026.09 – Present": "2026.09 – 至今",
-    "Research Intern · Dexmal": "科研实习生 · Dexmal",
+    "Embodied AI Algorithm Engineer · JD Explore Academy": "具身智能算法工程师 · 京东探索研究院",
     "The University of Sydney · Advisor:": "悉尼大学 · 导师：",
     "Research: Embodied AI, VLA/WAM architecture, reasoning and acceleration, image enhancement, and machine learning.": "研究方向：具身智能，VLA/WAM 模型的架构、推理与加速，图像增强算法和机器学习。",
     "B.Eng. in Computer Science and Technology": "计算机科学与技术工学学士",
@@ -65,8 +65,11 @@
     button.textContent = language === "zh" ? "EN" : "中文";
     button.setAttribute("aria-label", language === "zh" ? "Switch to English" : "切换到中文");
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-    window.localStorage.setItem("fediory-language", language);
   }
-  setLanguage(window.localStorage.getItem("fediory-language") === "zh" ? "zh" : "en");
-  button.addEventListener("click", function () { setLanguage(window.localStorage.getItem("fediory-language") === "zh" ? "en" : "zh"); });
+  let currentLanguage = "en";
+  setLanguage(currentLanguage);
+  button.addEventListener("click", function () {
+    currentLanguage = currentLanguage === "zh" ? "en" : "zh";
+    setLanguage(currentLanguage);
+  });
 })();
