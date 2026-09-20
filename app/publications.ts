@@ -10,6 +10,8 @@ export type Publication = {
   description: string;
   descriptionZh?: string;
   link: string;
+  image: string;
+  imageAlt: string;
 };
 
 export const publications: Publication[] = [
@@ -25,31 +27,37 @@ export const publications: Publication[] = [
     description: "A plug-and-play differentiable grid sampler for VLA models. With only 16 visual tokens it reduces VLA FLOPs by about 76%, while improving LIBERO success and real-robot performance.",
     descriptionZh: "提出一种即插即用的可微网格采样器，实现 VLA 视觉 Token 的高效压缩。在仅保留 16 个视觉 Token 的情况下，VLA FLOPs 降低约 76%，同时提升 LIBERO 成功率与真机表现。",
     link: "https://arxiv.org/abs/2605.11817",
+    image: "/publication-images/grid-sampler.png",
+    imageAlt: "Grid-Sampler architecture and token pruning overview",
   },
   {
     title: "HVI: A New Color Space for Low-light Image Enhancement",
     titleZh: "HVI：一种用于弱光图像增强的新色彩空间",
-    authors: "Qingsen Yan, Yixu Feng, Cheng Zhang, Guansong Pang, Kangbiao Shi, Peng Wu, Wei Dong, Jinqiu Sun, Yanning Zhang",
+    authors: "Qingsen Yan*, Yixu Feng*, Cheng Zhang, Guansong Pang, Kangbiao Shi, Peng Wu, Wei Dong, Jinqiu Sun, Yanning Zhang",
     venue: "CVPR 2025",
     venueZh: "CVPR 2025",
     rank: "CCF-A · CORE A*",
-    note: "Co-first author · 共同一作",
-    noteZh: "共同第一作者",
+    note: "Co-first author · Student first author",
+    noteZh: "共同第一作者 · 学生第一作者",
     description: "Introduces the HVI color space and CIDNet, a lightweight color-intensity decoupling network for robust low-light enhancement.",
     descriptionZh: "提出全新的 HVI 色彩空间与 CIDNet 轻量级色彩-强度解耦网络，用于稳定、准确的弱光图像增强。",
     link: "https://arxiv.org/abs/2502.20272",
+    image: "/publication-images/hvi.png",
+    imageAlt: "HVI-CIDNet architecture from the paper",
   },
   {
     title: "FusionNet: Multi-model Linear Fusion Framework for Low-light Image Enhancement",
     titleZh: "FusionNet：用于弱光图像增强的多模型线性融合框架",
-    authors: "Kangbiao Shi, Yixu Feng, Tao Hu, Yu Cao, Peng Wu, Yijin Liang, Yanning Zhang, Qingsen Yan",
+    authors: "Kangbiao Shi*, Yixu Feng*, Tao Hu, Yu Cao, Peng Wu, Yijin Liang, Yanning Zhang, Qingsen Yan",
     venue: "CVPR Workshops 2025 (NTIRE)",
     venueZh: "CVPR Workshops 2025（NTIRE）",
-    note: "Co-first author · 共同一作 · NTIRE 2025 champion",
+    note: "Co-first author · NTIRE 2025 champion",
     noteZh: "共同第一作者 · NTIRE 2025 低光增强赛道冠军",
     description: "A training-free linear fusion framework combining complementary enhancement models; ranked first in the CVPR 2025 NTIRE low-light enhancement track.",
     descriptionZh: "提出无需额外训练的多模型线性融合框架，实现不同增强模型的优势互补，并在 CVPR 2025 NTIRE 低光增强赛道获得第一名。",
     link: "https://arxiv.org/abs/2504.19295",
+    image: "/publication-images/fusionnet.png",
+    imageAlt: "FusionNet multi-model fusion framework",
   },
   {
     title: "DiffLight: Integrating Content and Detail for Low-light Image Enhancement",
@@ -62,6 +70,8 @@ export const publications: Publication[] = [
     description: "A dual-branch enhancement pipeline with progressive patch fusion for preserving details and reducing block artifacts in UHD images.",
     descriptionZh: "提出双分支增强流程与渐进式块融合策略，在保留细节的同时减少超高清图像分块处理带来的伪影。",
     link: "https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/html/Feng_DiffLight_Integrating_Content_and_Detail_for_Low-light_Image_Enhancement_CVPRW_2024_paper.html",
+    image: "/publication-images/difflight.png",
+    imageAlt: "DiffLight content and detail enhancement framework",
   },
   {
     title: "Flow-Guided Deformable Alignment with Channel-wise Self-Attention Reconstruct for Efficient Burst HDR Restoration",
@@ -74,11 +84,13 @@ export const publications: Publication[] = [
     description: "An alignment-centric burst HDR restoration model that improves motion alignment while keeping feature fusion lightweight and efficient.",
     descriptionZh: "一种以对齐为核心的 Burst HDR 恢复模型，在提升运动对齐能力的同时保持特征融合轻量高效。",
     link: "https://openaccess.thecvf.com/content/CVPR2025W/NTIRE/html/Zhou_Flow-Guided_Deformable_Alignment_with_Channel-wise_Self-Attention_Reconstruct_for_Efficient_Burst_CVPRW_2025_paper.html",
+    image: "/publication-images/flow-guided.png",
+    imageAlt: "Flow-guided burst HDR restoration framework",
   },
   {
     title: "HVI-CIDNet+: Beyond Extreme Darkness for Low-Light Image Enhancement",
     titleZh: "HVI-CIDNet+：面向极暗场景的弱光图像增强",
-    authors: "Qingsen Yan, Kangbiao Shi, Yixu Feng, Tao Hu, Peng Wu, Guansong Pang, Yanning Zhang",
+    authors: "Kangbiao Shi, Xiaowen Ma, Yixu Feng, Tao Hu, Peng Wu, Guansong Pang, Qingsen Yan",
     venue: "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
     venueZh: "IEEE Transactions on Circuits and Systems for Video Technology（TCSVT）",
     rank: "CCF-B",
@@ -87,6 +99,8 @@ export const publications: Publication[] = [
     description: "Extends HVI-CIDNet with a stronger enhancement pipeline for severely underexposed scenes.",
     descriptionZh: "在 HVI-CIDNet 基础上扩展更强的增强流程，面向严重欠曝光场景提供更强的图像增强能力。",
     link: "https://arxiv.org/abs/2507.06814",
+    image: "/publication-images/hvi-plus.png",
+    imageAlt: "HVI-CIDNet+ framework for extreme low-light enhancement",
   },
   {
     title: "You Only Need One Color Space: An Efficient Network for Low-light Image Enhancement",
@@ -99,6 +113,8 @@ export const publications: Publication[] = [
     description: "Introduces a trainable HVI color space and CIDNet to stabilize low-light enhancement under noisy illumination conditions.",
     descriptionZh: "提出可训练的 HVI 色彩空间与 CIDNet，在复杂噪声光照条件下提升弱光增强的稳定性。",
     link: "https://arxiv.org/abs/2402.05809",
+    image: "/publication-images/hvi-original.png",
+    imageAlt: "Motivation and color-space comparison from the paper",
   },
 ];
 
