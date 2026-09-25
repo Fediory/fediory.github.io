@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HVI: A New Color Space for Low-light Image Enhancement — CVPR 2025 project page.">
+  <title>HVI-CIDNet — CVPR 2025</title>
+  <link rel="icon" href="../public/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css?v=20260925-1">
+</head>
+<body>
+  <header class="paper-nav">
+    <a class="paper-brand" href="../">Yixu Feng</a>
+    <nav aria-label="Paper navigation">
+      <a href="#overview">Overview</a><a href="#results">Results</a><a href="#abstract">Abstract</a><a href="#citation">BibTeX</a>
+    </nav>
+  </header>
+  <main>
+    <section class="paper-hero">
+      <p class="venue">CVPR 2025 · CCF-A · CORE A*</p>
+      <h1><span>HVI</span>: A New Color Space for<br>Low-light Image Enhancement</h1>
+      <p class="authors"><span>Qingsen Yan*</span><a class="student-author" href="https://scholar.google.com/citations?user=WljJ2HUAAAAJ" target="_blank" rel="noreferrer">Yixu Feng*</a><span>Cheng Zhang</span><span>Guansong Pang</span><span>Kangbiao Shi</span><span>Peng Wu</span><span>Wei Dong</span><span>Jinqiu Sun</span><span>Yanning Zhang</span></p>
+      <p class="equal-note">* Equal contribution · Yixu Feng is the student first author</p>
+      <p class="affiliations"><span><sup>1</sup> Northwestern Polytechnical University</span><span><sup>2</sup> Singapore Management University</span><span><sup>3</sup> Xi'an University of Architecture and Technology</span></p>
+      <p class="hero-statement">A color space designed for low-light vision—separating chromaticity from intensity to suppress red discontinuity and black-plane noise.</p>
+      <div class="paper-actions">
+        <a class="primary" href="https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_HVI_A_New_Color_Space_for_Low-light_Image_Enhancement_CVPR_2025_paper.pdf" target="_blank" rel="noreferrer">Paper</a>
+        <a href="https://arxiv.org/abs/2502.20272" target="_blank" rel="noreferrer">arXiv</a>
+        <a href="https://github.com/Fediory/HVI-CIDNet" target="_blank" rel="noreferrer">Code</a>
+        <a href="https://huggingface.co/spaces/Fediory/HVI-CIDNet_Low-light-Image-Enhancement_" target="_blank" rel="noreferrer">Live Demo</a>
+      </div>
+    </section>
+
+    <section class="paper-section lead-figure">
+      <div class="section-heading"><p>01 · Motivation</p><h2>Rethinking the color space</h2></div>
+      <p class="section-lead">Standard sRGB couples brightness and color, while HSV introduces red discontinuity and black-plane noise. HVI reshapes the hue-saturation plane and learns an intensity collapse function for stable enhancement.</p>
+      <figure><img src="../public/hvi-cidnet/motivation.png" alt="Comparison of noise in sRGB and HSV with the proposed HVI color space"><figcaption>HVI reduces the distance between perceptually similar red coordinates and compresses unstable low-intensity regions.</figcaption></figure>
+    </section>
+
+    <section class="paper-section" id="overview">
+      <div class="section-heading"><p>02 · Overview</p><h2>Color and Intensity Decoupling Network</h2></div>
+      <p class="section-lead">CIDNet processes the HV chromatic plane and the intensity axis with two dedicated branches, then exchanges complementary information through Lighten Cross-Attention blocks.</p>
+      <figure class="wide-figure"><img src="../public/hvi-cidnet/pipeline.png" alt="HVI-CIDNet pipeline"><figcaption>End-to-end pipeline: sRGB → HVI transformation → dual-branch CIDNet → perceptual inverse HVI transformation.</figcaption></figure>
+      <div class="split-feature">
+        <div><p class="mini-label">LIGHTEN CROSS-ATTENTION</p><h3>Separate, exchange, reconstruct.</h3><p>The intensity branch focuses on illumination recovery; the HV branch removes chromatic noise. Cross-attention lets each branch borrow only the information it needs.</p></div>
+        <figure><img src="../public/hvi-cidnet/structure.png" alt="Lighten Cross-Attention block structure"><figcaption>LCA block structure.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="paper-section" id="results">
+      <div class="section-heading"><p>03 · Results</p><h2>Consistent enhancement across benchmarks</h2></div>
+      <p class="section-lead">HVI-CIDNet surpasses prior low-light enhancement methods across ten datasets while remaining lightweight and robust to severe noise, color shifts, and non-uniform illumination.</p>
+      <figure class="results-figure"><img src="../public/hvi-cidnet/lol-results.jpg" alt="Visual comparisons on LOL-v1, LOL-v2-real and LOL-v2-synthetic"><figcaption>Visual comparison on paired LOL benchmarks. HVI-CIDNet restores natural brightness and color while preserving fine details.</figcaption></figure>
+      <div class="result-cards"><article><strong>10</strong><span>datasets evaluated</span></article><article><strong>28.39 dB</strong><span>LOLv2-Real PSNR with GT mean</span></article><article><strong>29.57 dB</strong><span>LOLv2-Synthetic PSNR with GT mean</span></article><article><strong>3.13</strong><span>average NIQE on five unpaired sets</span></article></div>
+    </section>
+
+    <section class="paper-section text-section" id="abstract">
+      <div class="section-heading"><p>04 · Abstract</p><h2>Designed for low-light vision</h2></div>
+      <p>Low-Light Image Enhancement (LLIE) aims to recover detailed visual information from corrupted low-light images. Existing sRGB-based methods often produce color bias and brightness artifacts because brightness and chromaticity remain coupled, while HSV-based alternatives introduce red and black noise artifacts.</p>
+      <p>We propose Horizontal/Vertical-Intensity (HVI), a new color space defined by polarized HS maps and learnable intensity. Polarization closes the red discontinuity, and the learnable intensity function compresses unstable low-light regions. A Color and Intensity Decoupling Network (CIDNet) then learns accurate photometric mappings in HVI space. Comprehensive benchmark and ablation studies show that HVI with CIDNet outperforms state-of-the-art methods across ten datasets.</p>
+    </section>
+
+    <section class="paper-section citation-section" id="citation">
+      <div class="section-heading"><p>05 · Citation</p><h2>BibTeX</h2></div>
+      <pre><code>@InProceedings{Yan_2025_CVPR,
+  author    = {Yan, Qingsen and Feng, Yixu and Zhang, Cheng and
+               Pang, Guansong and Shi, Kangbiao and Wu, Peng and
+               Dong, Wei and Sun, Jinqiu and Zhang, Yanning},
+  title     = {HVI: A New Color Space for Low-light Image Enhancement},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages     = {5678--5687},
+  year      = {2025}
+}</code></pre>
+    </section>
+  </main>
+  <footer><span>HVI-CIDNet · CVPR 2025</span><a href="../">Yixu Feng's Homepage ↗</a></footer>
+</body>
+</html>

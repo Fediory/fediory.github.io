@@ -41,7 +41,7 @@ export const publications: Publication[] = [
     noteZh: "共同第一作者 · 学生第一作者",
     description: "Introduces the HVI color space and CIDNet, a lightweight color-intensity decoupling network for robust low-light enhancement.",
     descriptionZh: "提出全新的 HVI 色彩空间与 CIDNet 轻量级色彩-强度解耦网络，用于稳定、准确的弱光图像增强。",
-    link: "https://arxiv.org/abs/2502.20272",
+    link: "/HVI-CIDNet/",
     image: "/publication-images/hvi.png",
     imageAlt: "HVI-CIDNet architecture from the paper",
   },
