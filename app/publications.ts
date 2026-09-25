@@ -10,6 +10,7 @@ export type Publication = {
   description: string;
   descriptionZh?: string;
   link: string;
+  paperPageHref?: string;
   image: string;
   imageAlt: string;
 };
@@ -27,6 +28,7 @@ export const publications: Publication[] = [
     description: "A plug-and-play differentiable grid sampler for VLA models. With only 16 visual tokens it reduces VLA FLOPs by about 76%, while improving LIBERO success and real-robot performance.",
     descriptionZh: "提出一种即插即用的可微网格采样器，实现 VLA 视觉 Token 的高效压缩。在仅保留 16 个视觉 Token 的情况下，VLA FLOPs 降低约 76%，同时提升 LIBERO 成功率与真机表现。",
     link: "https://arxiv.org/abs/2605.11817",
+    paperPageHref: "https://fediory.com/Grid-Sampler/",
     image: "/publication-images/grid-sampler.png",
     imageAlt: "Grid-Sampler architecture and token pruning overview",
   },
@@ -41,7 +43,8 @@ export const publications: Publication[] = [
     noteZh: "共同第一作者 · 学生第一作者",
     description: "Introduces the HVI color space and CIDNet, a lightweight color-intensity decoupling network for robust low-light enhancement.",
     descriptionZh: "提出全新的 HVI 色彩空间与 CIDNet 轻量级色彩-强度解耦网络，用于稳定、准确的弱光图像增强。",
-    link: "/HVI-CIDNet/",
+    link: "https://arxiv.org/abs/2502.20272",
+    paperPageHref: "/HVI-CIDNet/",
     image: "/publication-images/hvi.png",
     imageAlt: "HVI-CIDNet architecture from the paper",
   },
@@ -127,4 +130,5 @@ export const reviewerVenues = [
   "Conference on Neural Information Processing Systems (NeurIPS)",
   "Conference on Computer Vision and Pattern Recognition (CVPR)",
   "International Conference on Machine Learning (ICML)",
+  "International Conference on Learning Representations (ICLR)",
 ];
