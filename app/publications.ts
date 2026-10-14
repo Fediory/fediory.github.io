@@ -11,6 +11,8 @@ export type Publication = {
   descriptionZh?: string;
   link: string;
   paperPageHref?: string;
+  codeHref?: string;
+  demoHref?: string;
   image: string;
   imageAlt: string;
 };
@@ -60,6 +62,8 @@ export const publications: Publication[] = [
     descriptionZh: "提出全新的 HVI 色彩空间与 CIDNet 轻量级色彩-强度解耦网络，用于稳定、准确的弱光图像增强。",
     link: "https://arxiv.org/abs/2502.20272",
     paperPageHref: "/HVI-CIDNet/",
+    codeHref: "https://github.com/Fediory/HVI-CIDNet",
+    demoHref: "https://huggingface.co/spaces/Fediory/HVI-CIDNet_Low-light-Image-Enhancement_",
     image: "/publication-images/hvi.png",
     imageAlt: "HVI-CIDNet architecture from the paper",
   },
