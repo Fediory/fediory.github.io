@@ -6,6 +6,8 @@
     "OPEN SOURCE · ROBOTICS · VISION": "开源 · 机器人 · 视觉", "A focused collection of open-source work in embodied AI, robot teleoperation, VLA efficiency, operating systems, and low-light image enhancement.": "具身智能、机器人遥操作、VLA 效率、操作系统和弱光图像增强方向的开源项目。", "Efficient visual token resampling for VLA systems.": "面向 VLA 系统的高效视觉 Token 重采样。", "HVI color space and low-light enhancement code.": "HVI 色彩空间与弱光图像增强代码。", "HVI color space and low-light image enhancement code.": "HVI 色彩空间与弱光图像增强代码。", "NPUcore Operating System Kernel Building": "NPUcore 操作系统内核构建", "Team Leader and Teaching Assistant · Sep 2023 – Aug 2024. Built an operating-system kernel and supported featured courses in the Jichang Kang Intelligent System Advanced Class.": "队长兼助教 · 2023年9月 – 2024年8月。参与 NPUcore 操作系统内核实现，并担任康继昌智能系统拔尖班特色课程助教。", "1st Place · National Finals": "一等奖 · 全国总决赛", "Robot teleoperation framework for low-cost, intuitive control of robot manipulators.": "面向低成本、直观控制机械臂的机器人遥操作框架。", "Robot teleoperation": "机器人遥操作", "AgileX Piper adaptation for leader–follower teleoperation, data collection, replay, and policy evaluation.": "面向 AgileX Piper 的主从遥操作适配，支持数据采集、回放与策略评估。", "Embodied AI systems": "具身智能系统", "Paper Page ↗": "论文主页 ↗", "Project ↗": "项目 ↗", "Demo ↗": "演示 ↗", "PROJECT 01": "项目 01", "PROJECT 02": "项目 02", "PROJECT 03": "项目 03", "PROJECT 04": "项目 04", "PROJECT 05": "项目 05", "Image: AgileX Robotics ↗": "图片：AgileX Robotics ↗"
   };
   translations["Paper page ↗"] = "论文主页 ↗";
+  translations["September 2026"] = "2026年9月";
+  translations["Started an embodied AI algorithm engineering internship at JD Joy Future Academy, focusing on atomic-task decomposition and evaluation benchmarks."] = "开始在 JD Joy Future Academy（京东探索研究院）实习，开展具身智能原子任务拆解与评测 Benchmark 相关工作。";
   translations["Code ↗"] = "代码 ↗";
   translations["MPhil student in Computer Science"] = "计算机科学方向哲学硕士研究生";
   translations["MPhil in Computer Science"] = "哲学硕士（计算机科学方向）";
@@ -29,7 +31,7 @@
     "MPhil in Computer Science and Technology": "计算机科学与技术哲学硕士",
     "I am an MPhil student at": "我目前是",
     "2026.09 – Present": "2026.09 – 至今",
-    "Embodied AI Algorithm Engineer · JD Explore Academy": "具身智能算法工程师 · 京东探索研究院",
+    "Embodied AI Algorithm Engineer · JD Joy Future Academy": "具身智能算法工程师 · JD Joy Future Academy（京东探索研究院）",
     "The University of Sydney · Advisor:": "悉尼大学 · 导师：",
     "Research: Embodied AI, VLA/WAM architecture, reasoning and acceleration, image enhancement, and machine learning.": "研究方向：具身智能，VLA/WAM 模型的架构、推理与加速，图像增强算法和机器学习。",
     "B.Eng. in Computer Science and Technology": "计算机科学与技术工学学士",
