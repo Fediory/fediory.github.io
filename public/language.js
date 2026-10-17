@@ -33,7 +33,7 @@
     "2026.09 – Present": "2026.09 – 至今",
     "Embodied AI Algorithm Engineer · JD Joy Future Academy": "具身智能算法工程师 · JD Joy Future Academy（京东探索研究院）",
     "The University of Sydney · Advisor:": "悉尼大学 · 导师：",
-    "Research: Embodied AI, VLA/WAM architecture, reasoning and acceleration, image enhancement, and machine learning.": "研究方向：具身智能，VLA/WAM 模型的架构、推理与加速，图像增强算法和机器学习。",
+    "Research: Embodied AI, VLA/WAM architecture, reasoning and acceleration.": "研究方向：具身智能，VLA/WAM 模型的架构、推理与加速。",
     "B.Eng. in Computer Science and Technology": "计算机科学与技术工学学士",
     "Northwestern Polytechnical University · Jichang Kang Intelligent Systems Elite Class": "西北工业大学 · 康继昌智能系统拔尖班",
     "Research Intern · Stellar Edge AI": "科研实习生 · Stellar Edge AI（星衍智能）",
