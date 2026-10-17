@@ -38,7 +38,7 @@
     "Northwestern Polytechnical University · Jichang Kang Intelligent Systems Elite Class": "西北工业大学 · 康继昌智能系统拔尖班",
     "Research Intern · Stellar Edge AI": "科研实习生 · Stellar Edge AI（星衍智能）",
     "Hangzhou, China": "杭州，中国",
-    "Built an end-to-end VLA deployment pipeline for humanoid robots and Franka/SO100 arms; designed pruning and quantization methods that reduced end-to-end latency by about 40%.": "围绕人形机器人及 Franka/SO100 机械臂，搭建 VLA 模型从数据采集、微调到真机部署的完整流水线，设计剪枝与量化方案，将端到端延迟降低约 40%。",
+    "Built an end-to-end VLA pipeline for humanoid robots and Franka/SO100 arms, from data collection and fine-tuning to real-robot deployment; worked on visual compression to improve task transfer and cross-scenario generalization.": "围绕人形机器人及 Franka/SO100 机械臂，搭建 VLA 模型从数据采集、微调到真机部署的完整流水线；研究视觉压缩方法，以提升模型的任务迁移与跨场景泛化能力。",
     "Graphics Algorithm Intern · Zhongjin Huian Technology Co., Ltd.": "图形算法实习生 · 中金汇安科技有限公司",
     "Developed low-light enhancement and real-time video analysis modules for bank-counter surveillance, improving violation detection accuracy by more than 15%.": "负责银行柜台监控视频的实时流分析与低光增强，在边缘设备上实现 30fps 处理，使低光条件下违规检测准确率提升超过 15%。",
     "Scheduling Algorithm Architect Assistant · Hangzhen Technology Co., Ltd.": "调度算法架构师助理 · 航臻科技有限公司",
