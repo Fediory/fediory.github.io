@@ -7,12 +7,12 @@
   };
   translations["Paper page ↗"] = "论文主页 ↗";
   translations["September 2026"] = "2026年9月";
-  translations["Started an embodied AI algorithm engineering internship at JD Joy Future Academy, focusing on atomic-task decomposition and evaluation benchmarks."] = "开始在 JD Joy Future Academy（京东探索研究院）实习，开展具身智能原子任务拆解与评测 Benchmark 相关工作。";
+  translations["Started an embodied AI algorithm engineering internship at JD Joy Future Academy, building an automated task-evaluation benchmark for embodied AI."] = "开始在 JD Joy Future Academy（京东探索研究院）实习，建设具身智能自动化任务评测 Benchmark。";
   translations["Code ↗"] = "代码 ↗";
   translations["MPhil student in Computer Science"] = "计算机科学方向哲学硕士研究生";
   translations["MPhil in Computer Science"] = "哲学硕士（计算机科学方向）";
   translations["Team Leader and Teaching Assistant · Sep 2023 – Aug 2024. Built an operating-system kernel and supported featured courses in the Jichang Kang Intelligent Systems Elite Class."] = "队长兼助教 · 2023年9月 – 2024年8月。参与 NPUcore 操作系统内核实现，并担任康继昌智能系统拔尖班特色课程助教。";
-  translations["Working on atomic task decomposition and an evaluation benchmark for embodied AI to systematically assess models' task-level capabilities."] = "负责具身智能任务的原子化拆解与评测 Benchmark 建设，系统化评估模型的任务级能力。";
+  translations["Developing an automated task-evaluation benchmark for embodied AI to improve overall model evaluation efficiency and support faster, more effective model iteration."] = "负责构建具身智能自动化任务评测 Benchmark，提升模型整体评测效率，并支持更快速、有效的模型迭代。";
   translations["Copper-Policy: Focus on the Representation for Robust Robot Manipulation"] = "Copper-Policy：聚焦表征学习，实现鲁棒机器人操作";
   translations["arXiv submission · 2026"] = "已提交 arXiv · 2026";
   translations["· Second author · Submitted"] = "· 第二作者 · 已投稿";
